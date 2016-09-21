@@ -2,7 +2,7 @@
 > Deletes tweets for a specified user
 
 ## Requirements
-Python version [version#]\
+Python version [version#]<br>
 [libraries]
 
 ## Instructions
