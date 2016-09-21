@@ -1,4 +1,19 @@
 import json
-import oauth
+import oauth2
+from oauth_request import OauthRequest
 
-tweets = requests.get("https://api.twitter.com/1.1/statuses/user_timeline.json")
+try:
+	token = sys.argv[1]
+	secret = sys.argv[2]
+	
+except ValueError:
+	print("Invalid arguments. Expected token and secret.")
+	
+request = OauthRequest(secret, token)
+
+tweets = tweetRequest.getTweets()
+for tweet in tweets:
+	tweetRequest.delete(tweet)
+	
+
+	
